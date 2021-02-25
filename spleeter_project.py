@@ -25,7 +25,7 @@ from google.colab import files
 import IPython.display as ipd
 import sys
 
-url = "tk0DpND0vgA" #@param {type:"string"}
+url = "tk0DpND0vgA" #the very end part of a url with the group of letters (after the "=")
 embed_url = "https://www.youtube.com/watch?v=tk0DpND0vgA".format(url)
 HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/tk0DpND0vgA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
 
