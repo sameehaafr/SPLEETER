@@ -27,6 +27,8 @@ url = "dANdTnL7GxE" #the letter code after the "=" in the url
 embed_url = "the entire url".format(url)
 HTML('the embeded code') #you can find this when you click "share" and choose the "embed" option (iframe)
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 ydl_args = {
     'format': 'bestaudio/best',
     'outtmpl': 'filename.mp3'
@@ -39,7 +41,11 @@ ydl.download(['entire url'])
 
 display(Audio(audio[:, 0*rate:40*rate], rate=rate))
 
-!spleeter separate -p spleeter:4stems -o output/ filename.mp3
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+!spleeter separate -p spleeter:4stems -o output/ filename.mp3   #the options are 2stems, 4stems, or 5stems
+
+#below is for converting the .wav files into .mp3 files
 
 from pydub import AudioSegment
 sound = AudioSegment.from_wav("output/filename/vocals.wav")
